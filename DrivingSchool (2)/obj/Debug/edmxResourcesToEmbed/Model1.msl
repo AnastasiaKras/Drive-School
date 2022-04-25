@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище DataBaseDSModelContainer" CdmEntityContainer="DataBaseDSEntities">
+    <EntitySetMapping Name="lessons">
+      <EntityTypeMapping TypeName="DataBaseDSModel.lessons">
+        <MappingFragment StoreEntitySet="lessons">
+          <ScalarProperty Name="Итоговая_сумма_за_занятия_по_вождению" ColumnName="Итоговая сумма за занятия по вождению" />
+          <ScalarProperty Name="Количество_часов_вождения" ColumnName="Количество часов вождения" />
+          <ScalarProperty Name="Инструктор" ColumnName="Инструктор" />
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="Группа" ColumnName="Группа" />
+          <ScalarProperty Name="Категория" ColumnName="Категория" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="DataBaseDSModel.Students">
+        <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="Дата_выпуска" ColumnName="Дата выпуска" />
+          <ScalarProperty Name="Кем_выдана" ColumnName="Кем выдана" />
+          <ScalarProperty Name="Дата_выдачи" ColumnName="Дата выдачи" />
+          <ScalarProperty Name="Серия_и_номер_справки" ColumnName="Серия и номер справки" />
+          <ScalarProperty Name="Сумма_задолженности" ColumnName="Сумма задолженности" />
+          <ScalarProperty Name="Сумма_оплаты" ColumnName="Сумма оплаты" />
+          <ScalarProperty Name="Паспортные_данные" ColumnName="Паспортные данные" />
+          <ScalarProperty Name="Место_жительства" ColumnName="Место жительства" />
+          <ScalarProperty Name="Телефон" ColumnName="Телефон" />
+          <ScalarProperty Name="Дата_рождения" ColumnName="Дата рождения" />
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="Группа" ColumnName="Группа" />
+          <ScalarProperty Name="Категория" ColumnName="Категория" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="DataBaseDSModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="DataBaseDSModel.Groups">
+        <MappingFragment StoreEntitySet="Groups">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Преподаватель" ColumnName="Преподаватель" />
+          <ScalarProperty Name="Сроки_обучения" ColumnName="Сроки обучения" />
+          <ScalarProperty Name="Группа" ColumnName="Группа" />
+          <ScalarProperty Name="Категория" ColumnName="Категория" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Graduates">
+      <EntityTypeMapping TypeName="DataBaseDSModel.Graduates">
+        <MappingFragment StoreEntitySet="Graduates">
+          <ScalarProperty Name="Год_выпуска" ColumnName="Год выпуска" />
+          <ScalarProperty Name="Место_жительства" ColumnName="Место жительства" />
+          <ScalarProperty Name="Паспортные_данные" ColumnName="Паспортные данные" />
+          <ScalarProperty Name="Дата_рождения" ColumnName="Дата рождения" />
+          <ScalarProperty Name="Телефон" ColumnName="Телефон" />
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teacher">
+      <EntityTypeMapping TypeName="DataBaseDSModel.Teacher">
+        <MappingFragment StoreEntitySet="Teacher">
+          <ScalarProperty Name="Категория" ColumnName="Категория" />
+          <ScalarProperty Name="Категория_преподавания" ColumnName="Категория преподавания" />
+          <ScalarProperty Name="Телефон" ColumnName="Телефон" />
+          <ScalarProperty Name="Паспортные_данные_" ColumnName="Паспортные данные " />
+          <ScalarProperty Name="Место_жительства" ColumnName="Место жительства" />
+          <ScalarProperty Name="Дата_рождения" ColumnName="Дата рождения" />
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Timetable">
+      <EntityTypeMapping TypeName="DataBaseDSModel.Timetable">
+        <MappingFragment StoreEntitySet="Timetable">
+          <ScalarProperty Name="Суббота" ColumnName="Суббота" />
+          <ScalarProperty Name="Пятница" ColumnName="Пятница" />
+          <ScalarProperty Name="Четверг" ColumnName="Четверг" />
+          <ScalarProperty Name="Среда" ColumnName="Среда" />
+          <ScalarProperty Name="Вторник" ColumnName="Вторник" />
+          <ScalarProperty Name="Понедельник" ColumnName="Понедельник" />
+          <ScalarProperty Name="Время" ColumnName="Время" />
+          <ScalarProperty Name="C_" ColumnName="№" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

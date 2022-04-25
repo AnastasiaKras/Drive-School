@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище DataBaseDSModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Graduates">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="ФИО" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Телефон" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Дата рождения" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Паспортные данные" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Место жительства" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Год выпуска" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Groups">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Категория" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Группа" Type="int" Nullable="false" />
+    <Property Name="Сроки обучения" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Преподаватель" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="lessons">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Категория" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Группа" Type="int" Nullable="false" />
+    <Property Name="ФИО" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Инструктор" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Количество часов вождения" Type="nvarchar" MaxLength="50" />
+    <Property Name="Итоговая сумма за занятия по вождению" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Students">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Категория" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Группа" Type="int" Nullable="false" />
+    <Property Name="ФИО" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Дата рождения" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Телефон" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Место жительства" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Паспортные данные" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Сумма оплаты" Type="nvarchar" MaxLength="50" />
+    <Property Name="Сумма задолженности" Type="nvarchar" MaxLength="50" />
+    <Property Name="Серия и номер справки" Type="nvarchar" MaxLength="50" />
+    <Property Name="Дата выдачи" Type="nvarchar" MaxLength="50" />
+    <Property Name="Кем выдана" Type="nvarchar" MaxLength="50" />
+    <Property Name="Дата выпуска" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ФИО" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Дата рождения" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Место жительства" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Паспортные данные " Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Телефон" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Категория преподавания" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Категория" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Timetable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="№" Type="int" />
+    <Property Name="Время" Type="datetime" />
+    <Property Name="Понедельник" Type="nvarchar" MaxLength="50" />
+    <Property Name="Вторник" Type="nvarchar" MaxLength="50" />
+    <Property Name="Среда" Type="nvarchar" MaxLength="50" />
+    <Property Name="Четверг" Type="nvarchar" MaxLength="50" />
+    <Property Name="Пятница" Type="nvarchar" MaxLength="50" />
+    <Property Name="Суббота" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Пароль" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="Хранилище DataBaseDSModelContainer">
+    <EntitySet Name="Graduates" EntityType="Self.Graduates" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Groups" EntityType="Self.Groups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lessons" EntityType="Self.lessons" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Students" EntityType="Self.Students" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Teacher" EntityType="Self.Teacher" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Timetable" EntityType="Self.Timetable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
