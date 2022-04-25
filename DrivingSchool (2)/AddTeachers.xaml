@@ -1,0 +1,37 @@
+﻿<Window x:Class="DrivingSchool.AddTeachers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrivingSchool"
+        mc:Ignorable="d"
+        Title="Accounting system for driving school students 2020 – Register as a new teachers" Height="461.6" Width="827.2" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+                <GradientStop Color="#FF0C2342" Offset="0" />
+                <GradientStop Color="#FF4C6F8C" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Margin="0,0,-0.2,376.8" FontFamily="Cambria" FontWeight="Bold" FontSize="20" Background="#FF545252" Foreground="White"/>
+        <Button Content="Отмена" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="33" Click="Button_Click" FontFamily="Cambria" FontWeight="Normal" Margin="466,357,0,0" />
+        <Label Content="DRIVING SCHOOL" Margin="164,0,9.8,376.8" FontFamily="Cambria" FontWeight="Bold" FontSize="20" Background="#FF545252" Foreground="White" VerticalAlignment="Center"/>
+        <Label Content="Добавление преподавателя" Margin="278,60,278.8,331" FontFamily="Cambria" FontSize="20" Background="{x:Null}" Foreground="White"/>
+        <Label Content="Пожалуйста заполните всю информацию, чтобы добавить преподавателя " FontFamily="Cambria" FontSize="15" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" Height="30" Margin="153,101,136.8,0" VerticalAlignment="Top" Width="531"/>
+        <Label Content="ФИО:" HorizontalAlignment="Left" Margin="36,167,0,0" VerticalAlignment="Top" Height="25" Width="42" FontSize="13" Foreground="White" FontFamily="Cambria"/>
+        <TextBox x:Name="FIO" HorizontalAlignment="Left" Height="25" Margin="83,167,0,0" VerticalAlignment="Top" Width="271" FontFamily="Cambria"  Foreground="#FFA8A1A1" />
+        <Label Content="Паспортные данные:" HorizontalAlignment="Left" Margin="36,201,0,0" VerticalAlignment="Top" Height="24" Width="136" FontSize="13" Foreground="White" FontFamily="Cambria"/>
+        <TextBox x:Name="Ps" HorizontalAlignment="Left" Height="24" Margin="177,201,0,0" VerticalAlignment="Top" Width="177" Foreground="#FFA8A1A1" FontFamily="Cambria" FontWeight="Bold" />
+        <Label Content="Дата рождения:" HorizontalAlignment="Left" Margin="65,234,0,0" VerticalAlignment="Top" Height="25" Width="107" FontSize="13" Foreground="White" FontFamily="Cambria"/>
+        <Label Content="Место жительства:" HorizontalAlignment="Left" Margin="48,268,0,0" VerticalAlignment="Top" Height="24" Width="124" FontSize="13" Foreground="White" FontFamily="Cambria"/>
+        <TextBox x:Name="Dr" HorizontalAlignment="Left" Height="25" Margin="177,234,0,0" VerticalAlignment="Top" Width="177" FontFamily="Cambria"  Foreground="#FFA8A1A1" />
+        <TextBox x:Name="Mh" HorizontalAlignment="Left" Height="24" Margin="177,268,0,0" VerticalAlignment="Top" Width="177" Foreground="#FFA8A1A1" FontFamily="Cambria" FontWeight="Bold" />
+        <Label Content="Телефон:" HorizontalAlignment="Left" Margin="510,234,0,0" VerticalAlignment="Top" Height="25" Width="66" FontSize="13" Foreground="White" FontFamily="Cambria"/>
+        <Label Content="Категория:" HorizontalAlignment="Left" Margin="497,201,0,0" VerticalAlignment="Top" Height="24" Width="79" FontSize="13" Foreground="White" FontFamily="Cambria"/>
+        <TextBox x:Name="Phone" HorizontalAlignment="Left" Height="25" Margin="581,234,0,0" VerticalAlignment="Top" Width="177" FontFamily="Cambria"  Foreground="#FFA8A1A1" />
+        <TextBox x:Name="Category" HorizontalAlignment="Left" Height="24" Margin="581,201,0,0" VerticalAlignment="Top" Width="177" Foreground="#FFA8A1A1" FontFamily="Cambria" FontWeight="Bold" />
+        <Button Content="Регистрация" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Height="33" Click="Button_Click_1" FontFamily="Cambria" FontWeight="Normal" Margin="278,357,0,0" />
+        <Label Content="Категория преподавания:" HorizontalAlignment="Left" Margin="411,168,0,0" VerticalAlignment="Top" Height="24" Width="165" FontSize="13" Foreground="White" FontFamily="Cambria"/>
+        <TextBox x:Name="CategoryPr" HorizontalAlignment="Left" Height="24" Margin="581,168,0,0" VerticalAlignment="Top" Width="177" Foreground="#FFA8A1A1" FontFamily="Cambria" FontWeight="Bold" />
+    </Grid>
+</Window>

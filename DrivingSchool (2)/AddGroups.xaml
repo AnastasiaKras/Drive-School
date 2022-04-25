@@ -1,0 +1,31 @@
+﻿<Window x:Class="DrivingSchool.AddGroups"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrivingSchool"
+        mc:Ignorable="d"
+        Title="Accounting system for driving school students 2020 – Group of students" Height="377.319" Width="735.394" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+                <GradientStop Color="#FF0C2342" Offset="0" />
+                <GradientStop Color="#FF4C6F8C" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Margin="0,0,-0.2,296" FontFamily="Cambria" FontWeight="Bold" FontSize="20" Background="#FF545252" Foreground="White"/>
+        <Button Content="Отмена" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="33" Click="Button_Click" FontFamily="Cambria" FontWeight="Normal" Margin="383,264,0,0" />
+        <Label Content="DRIVING SCHOOL" Margin="140,10,33.8,301" FontFamily="Cambria" FontWeight="Bold" FontSize="20" Background="#FF545252" Foreground="White" VerticalAlignment="Center" Height="37"/>
+        <Label Content="Добавление группы" Margin="259,52,233.8,247" FontFamily="Cambria" FontSize="20" Background="{x:Null}" Foreground="White"/>
+        <Label Content="Пожалуйста заполните всю информацию, чтобы добавить группу" FontFamily="Cambria" FontSize="15" Background="{x:Null}" Foreground="White" HorizontalAlignment="Center" Height="30" Margin="127,101,127.8,0" VerticalAlignment="Top" Width="474"/>
+        <Label Content="Преподаватель:" HorizontalAlignment="Left" Margin="310,200,0,0" VerticalAlignment="Top" Height="25" Width="109" FontSize="13" Foreground="White" FontFamily="Cambria"/>
+        <TextBox x:Name="FIO" HorizontalAlignment="Left" Height="25" Margin="424,200,0,0" VerticalAlignment="Top" Width="271" FontFamily="Cambria"  Foreground="#FFA8A1A1" />
+        <Label Content="Категория:" HorizontalAlignment="Left" Margin="16,153,0,0" VerticalAlignment="Top" Height="24" Width="79" FontSize="13" Foreground="White" FontFamily="Cambria"/>
+        <TextBox x:Name="Category" HorizontalAlignment="Left" Height="24" Margin="100,153,0,0" VerticalAlignment="Top" Width="177" Foreground="#FFA8A1A1" FontFamily="Cambria" FontWeight="Bold" />
+        <Label Content="Группа:" HorizontalAlignment="Left" Margin="37,196,0,0" VerticalAlignment="Top" Height="24" Width="58" FontSize="13" Foreground="White" FontFamily="Cambria"/>
+        <TextBox x:Name="Group" HorizontalAlignment="Left" Height="24" Margin="100,196,0,0" VerticalAlignment="Top" Width="177" Foreground="#FFA8A1A1" FontFamily="Cambria" FontWeight="Bold" />
+        <Button Content="Добавить" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Height="33" Click="Button_Click_1" FontFamily="Cambria" FontWeight="Normal" Margin="195,264,0,0" />
+        <Label Content="Сроки обучения:" HorizontalAlignment="Left" Margin="310,153,0,0" VerticalAlignment="Top" Height="24" Width="109" FontSize="13" Foreground="White" FontFamily="Cambria"/>
+        <TextBox x:Name="So" HorizontalAlignment="Left" Height="24" Margin="424,153,0,0" VerticalAlignment="Top" Width="177" Foreground="#FFA8A1A1" FontFamily="Cambria" FontWeight="Bold" />
+    </Grid>
+</Window>
